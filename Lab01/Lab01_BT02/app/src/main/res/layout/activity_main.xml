@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Họ và tên: Nguyễn Quang Thế Anh-->
+<!--MSSV: 24520115-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:paddingLeft="@dimen/padding_horizontal"
+    android:paddingRight="@dimen/padding_horizontal">
+
+    <!-- SIGN IN -->
+    <TextView
+        android:id="@+id/tv_sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_title_top"
+        android:text="@string/sign_in"
+        android:textAllCaps="true"
+        android:textSize="@dimen/text_title"
+        android:textStyle="bold" />
+
+    <!-- USERNAME -->
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="@dimen/label_width"
+        android:layout_height="@dimen/label_height"
+        android:layout_below="@id/tv_sign_in"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/margin_username_top"
+        android:gravity="center_vertical"
+        android:text="@string/username"
+        android:textSize="@dimen/text_label"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/edittext_height"
+        android:layout_alignTop="@id/tv_user_name"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@id/tv_user_name"
+        android:hint="nguyenquangtheanh@gmail.com"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textSize="@dimen/text_input" />
+
+    <!-- PASSWORD -->
+    <TextView
+        android:id="@+id/tv_password"
+        android:layout_width="@dimen/label_width"
+        android:layout_height="@dimen/label_height"
+        android:layout_below="@id/tv_user_name"
+        android:layout_alignParentStart="true"
+        android:gravity="center_vertical"
+        android:text="@string/password"
+        android:textSize="@dimen/text_label"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/edittext_height"
+        android:layout_alignTop="@id/tv_password"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@id/tv_password"
+        android:hint="***********"
+        android:gravity="center_vertical"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:textSize="@dimen/text_input" />
+
+    <!-- SIGN IN BUTTON -->
+    <Button
+        android:id="@+id/btn_sign_in"
+        android:layout_width="@dimen/sign_in_button_width"
+        android:layout_height="@dimen/sign_in_button_height"
+        android:layout_below="@id/et_password"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/margin_sign_in_top"
+        android:backgroundTint="#D6D6D6"
+        android:padding="0dp"
+        android:text="@string/sign_in"
+        android:textSize="@dimen/text_sign_in_button"
+        android:textStyle="bold" />
+
+    <!-- SIGN IN VIA FACEBOOK -->
+    <Button
+        android:id="@+id/btn_facebook"
+        android:layout_width="@dimen/bottom_button_width"
+        android:layout_height="@dimen/bottom_button_height"
+        android:layout_above="@id/btn_sign_up"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_bottom_button"
+        android:backgroundTint="#D6D6D6"
+        android:padding="0dp"
+        android:text="@string/facebook"
+        android:textSize="@dimen/text_bottom_button"
+        android:textStyle="bold" />
+
+    <!-- SIGN UP -->
+    <Button
+        android:id="@+id/btn_sign_up"
+        android:layout_width="@dimen/bottom_button_width"
+        android:layout_height="@dimen/bottom_button_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_bottom_button"
+        android:backgroundTint="#D6D6D6"
+        android:padding="0dp"
+        android:text="@string/signup"
+        android:textSize="@dimen/text_bottom_button"
+        android:textStyle="bold" />
+
+</RelativeLayout>
