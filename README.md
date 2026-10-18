@@ -23,7 +23,7 @@
 | Lab | Tên bài thực hành |
 |-----|-------------------|
 | Lab 1 | Basic Layouts     |
-| Lab 2 | Chưa cập nhật ... |
+| Lab 2 | LISTVIEW và RECYCLERVIER |
 | Lab 3 | Chưa cập nhật ... |
 | Lab 4 | Chưa cập nhật ... |
 | Lab 5 | Chưa cập nhật ... |
