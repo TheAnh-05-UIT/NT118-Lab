@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ListviewActivityWithArrayList</string>
+    <string name="hint">Nhập tên</string>
+</resources>
